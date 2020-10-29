@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import CharacterItem from './CharacterItem';
-import { useCharacters } from '../hooks/Characters';
+import { useCharacters } from '../../hooks/Characters';
 
 const CharacterList = () => {
     const characters = useCharacters();

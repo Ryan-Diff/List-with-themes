@@ -1,6 +1,8 @@
 import React from 'react';
-import CharacterList from '../../character/CharacterList';
+import Theme from '../theme-changer/Theme';
 
 export default function App() {
-  return <CharacterList />;
+  return (
+    <Theme />
+  );
 }

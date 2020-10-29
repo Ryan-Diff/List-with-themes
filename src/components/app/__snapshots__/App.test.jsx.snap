@@ -2,6 +2,13 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
+  <header>
+    <button
+      data-testid="button"
+    >
+      ヾ⌐■_■ノ♪
+    </button>
+  </header>
   <ul
     data-testid="characters"
   />

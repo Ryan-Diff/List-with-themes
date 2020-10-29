@@ -1,2 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
-import { ThemeContext, toggle } from '../context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext';
+
+export const useThemePicker = () => {
+    const { theme, toggle } = useContext(ThemeContext);
+    return { theme, toggle };
+};
