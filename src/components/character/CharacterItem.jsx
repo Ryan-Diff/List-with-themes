@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useThemePicker } from '../../hooks/themes';
+import '../theme-changer/Theme.css';
 
 const CharacterItem = ({ name, image }) => {
-    return <figure>
-        <img src={image} alt={name} />
-        <figcaption>{name}</figcaption>
-    </figure>
-}
+    const { themeType } = useThemePicker();
+
+    return (
+        <figure className={themeType}>
+            <img src={image} alt={name} />
+            <figcaption>{name}</figcaption>
+        </figure>
+    );
+};
 
 CharacterItem.propTypes = {
     name: PropTypes.string.isRequired,

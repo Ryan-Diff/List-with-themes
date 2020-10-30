@@ -3,6 +3,7 @@
 exports[`CharacterList component Renders a list of Characters 1`] = `
 <DocumentFragment>
   <ul
+    class="CharacterList undefined"
     data-testid="characters"
   />
 </DocumentFragment>

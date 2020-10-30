@@ -7,10 +7,7 @@ export const ThemeProvider = ({ children }) => {
     const [themeType, setThemeType] = useState('LightMode');
 
     const toggle = () => {
-        setThemeType(oldType => {
-            if(oldType === 'LightMode') return 'DarkMode';
-            return 'LightMode';
-        });
+        setThemeType(currentTheme => currentTheme === 'dark' ? 'light' : 'dark');
     };
 
     return (

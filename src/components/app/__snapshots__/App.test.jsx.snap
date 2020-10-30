@@ -2,14 +2,15 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <header>
-    <button
-      data-testid="button"
-    >
+  <header
+    class="LightMode"
+  >
+    <button>
       ヾ⌐■_■ノ♪
     </button>
   </header>
   <ul
+    class="CharacterList LightMode"
     data-testid="characters"
   />
 </DocumentFragment>
