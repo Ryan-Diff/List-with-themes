@@ -5,7 +5,7 @@ import { ThemeProvider } from './context/ThemeContext';
 
 render(
   <ThemeProvider>
-    <App />,
+    <App />
   </ThemeProvider>,
   document.getElementById('root')
 );
